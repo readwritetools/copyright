@@ -64,7 +64,7 @@ module.exports = class CLI {
     
     usageAndExit() {
 		var s = [];
-		s.push("usage: copyright [copyright file] [destination file] [options]");
+		s.push("usage: copyright [copyright file] [destination file]");
 		s.push("");
 		s.push("options:");
 		s.push("    --version");
@@ -86,7 +86,7 @@ module.exports = class CLI {
 
     listHelp() {
 		var s = [];
-		s.push("usage: copyright [copyright file] [destination file] [options]");
+		s.push("usage: copyright [copyright file] [destination file]");
 		return s.join("\n")
     }
     
