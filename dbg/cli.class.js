@@ -9,12 +9,12 @@
 //
 //=============================================================================
 
-import {expect}			from 'joezone';
-import {terminal}		from 'joezone';
-import {Pfile}			from 'joezone';
-import fs				from 'fs';
+var expect = require('joezone').expect;
+var terminal = require('joezone').terminal;
+var Pfile = require('joezone').Pfile;
+var fs = require('fs');
 
-export default class CLI {
+module.exports = class CLI {
 	
     constructor() {
 		this.copyrightPfile = null;
