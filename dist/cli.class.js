@@ -23,9 +23,8 @@ module.exports = class CLI {
     }
     usageAndExit() {
         var e = [];
-        e.push('usage: copyright [copyright file] [destination file] [options]'), e.push(''), 
-        e.push('options:'), e.push('    --version'), e.push('    --help       show help'), 
-        this.exit(e.join('\n'));
+        e.push('usage: copyright [copyright file] [destination file]'), e.push(''), e.push('options:'), 
+        e.push('    --version'), e.push('    --help       show help'), this.exit(e.join('\n'));
     }
     showVersion() {
         try {
@@ -37,8 +36,7 @@ module.exports = class CLI {
     }
     listHelp() {
         var e = [];
-        return e.push('usage: copyright [copyright file] [destination file] [options]'), 
-        e.join('\n');
+        return e.push('usage: copyright [copyright file] [destination file]'), e.join('\n');
     }
     exit(e) {
         terminal.writeToConsoleOrStderr('\nAdd copyright text to destination file\n'), terminal.writeToConsoleOrStderr(e + '\n'), 
