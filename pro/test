@@ -1,0 +1,17 @@
+!blue 2.0
+//=============================================================================
+//
+// File:         copyright/pro/test
+// Language:     prorenata script
+// Copyright:    Joe Honton © 2018
+// License:      CC-BY-NC-ND 4.0
+// Initial date: Dec 30, 2018
+// Contents:     simple test
+//
+//=============================================================================
+
+//
+// ---------- simple test  ---------- 
+run {
+	sh node ../src/main.js ../test/copyright.txt ../test/final.js
+}
