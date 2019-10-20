@@ -8,9 +8,8 @@ module.exports = class CLI {
     validateOptions() {
         var e = Array.from(process.argv);
         2 == e.length && this.usageAndExit();
-        for (let t = e.length - 1; t > 1; t--) {
-            var i = e[t];
-            switch (i) {
+        for (let i = e.length - 1; i > 1; i--) {
+            switch (e[i]) {
               case '--version':
                 return this.exit(this.showVersion()), !1;
 
@@ -29,8 +28,8 @@ module.exports = class CLI {
     }
     showVersion() {
         try {
-            var e = new Pfile(__dirname).addPath('../package.json').name, i = fs.readFileSync(e, 'utf-8'), t = JSON.parse(i);
-            return `version v${t.version}`;
+            var e = new Pfile(__dirname).addPath('../package.json').name, i = fs.readFileSync(e, 'utf-8');
+            return `version v${JSON.parse(i).version}`;
         } catch (e) {
             return `version unknown ${e.message}`;
         }

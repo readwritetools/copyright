@@ -15,7 +15,7 @@ template {
 	/* npm install -g uglify-es */
 	minify-js      uglifyjs <source> --output <dest> --compress --mangle --keep-classnames --keep-fnames --beautify quote_style=1 --ecma 8
 	/* use just-built code to copyright this library */
-	copyright-js   node ../dbg/main.js ../../../app/prorenata-common/copyright.js <dest>
+	copyright-js   copyright ./copyright/copyright-rwt.js <dest>
 }
 
 // ---------- remove comments and whitespace ---------- 
