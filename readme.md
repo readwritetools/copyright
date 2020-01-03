@@ -17,7 +17,7 @@
 
 
 <address>
-<img src='/img/rwtools.png' width=80 /> by <a href='https://readwritetools.com' title='Read Write Tools'>Read Write Tools</a> <time datetime=2019-10-20>Oct 20, 2109</time></address>
+<img src='/img/rwtools.png' width=80 /> by <a href='https://readwritetools.com' title='Read Write Tools'>Read Write Tools</a> <time datetime=2019-10-20>Oct 20, 2019</time></address>
 
 
 
