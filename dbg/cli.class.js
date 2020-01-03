@@ -2,8 +2,8 @@
 //
 // File:         copyright/src/cli.class.js
 // Language:     ECMAScript 2015
-// Copyright:    Joe Honton © 2018
-// License:      CC-BY-NC-ND 4.0
+// Copyright:    Read Write Tools © 2019
+// License:      MIT
 // Initial date: Dec 30, 2018
 // Contents:     Command line interface
 //

@@ -3,15 +3,16 @@
 //
 // File:         copyright/pro/compile
 // Language:     prorenata script
-// Copyright:    Joe Honton © 2018
-// License:      CC-BY-NC-ND 4.0
+// Copyright:    Read Write Tools © 2019
+// License:      MIT
 // Initial date: Dec 30, 2018
 // Contents:     Convert ES6 import/export syntax to require/module syntax
 //
 //=============================================================================
 
 template {
-	eximjs 		 eximjs <source> <dest>
+	eximjs		eximjs <source> <dest>
+	ghfm		blue compile <source> <dest> --emit=ghfm
 }
 
 // ---------- rewrite export/import (src) ---------- 
@@ -28,3 +29,10 @@ compare {
 	dest      '../src'
 }
 
+// ---------- Convert blue document into Github Flavored readme.md ---------- 
+recurse {
+	source '/palau/www/hub.readwritetools.com/tasks/ghfm/copyright.blue'
+	dest   '../readme.md' 
+	overwrite always
+	exec ghfm
+}
