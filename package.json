@@ -20,7 +20,8 @@
   },
   "keywords": [
     "cli",
-    "copyright"
+    "copyright",
+    "readwritetools"
   ],
   "bugs": {
     "url": "https://github.com/readwritetools/copyright/issues"
