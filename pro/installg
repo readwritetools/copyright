@@ -10,14 +10,14 @@
 //
 //=============================================================================
 
-// ---------- install app to user's path ---------- 
+// ---------- install app to user's path using an alias ---------- 
 run {
 	sh npm -g bin   // show target destination
-	sh npm install -g copyright@latest
+	sh npm install -g --force copyright@npm:copyright-notice@latest
 	sh copyright --version
 
-	sh ssh nk024 npm install -g copyright@latest
-	sh ssh nk025 npm install -g copyright@latest
-	sh ssh nk026 npm install -g copyright@latest
-	sh ssh nk027 npm install -g copyright@latest
+	sh ssh nk024 npm install -g --force copyright@npm:copyright-notice@latest
+	sh ssh nk025 npm install -g --force copyright@npm:copyright-notice@latest
+	sh ssh nk026 npm install -g --force copyright@npm:copyright-notice@latest
+	sh ssh nk027 npm install -g --force copyright@npm:copyright-notice@latest
 }
